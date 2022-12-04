@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. ./system_info.sh
+. ./print_system_info.sh
 
 TIME_ZONE=$( timedatectl | grep "Time zone" | cut -d ":" -f 2 | cut -c 2- )
 USER=$( whoami )
